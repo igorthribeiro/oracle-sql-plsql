@@ -1,0 +1,13 @@
+NOME:
+CPF:
+EMAIL:
+OPÇÃO:
+CURSO:
+
+IGOR   123.456.789-00 igorth.genesis   2     97000
+
+AMANDA 000.111.222-33 amanda@gmail.com 2     97000
+
+LUANA  111.000.333-22 luana@gmail.com  1     97000
+										   
+LUCAS  222.777.444-55 lucas@gmail.com  1     97000

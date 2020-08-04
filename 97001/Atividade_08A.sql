@@ -1,0 +1,14 @@
+DECLARE
+   CURSOR C_EMPS IS 
+          SELECT EMPLOYEE_ID, DEPARTMENT_ID, SALARY
+            FROM EMPLOYEES
+           WHERE SALARY > 6000;
+BEGIN
+    FOR V_EMP_REC IN C_EMPS LOOP
+       DBMS_OUTPUT.PUT_LINE('EMP.ID: '||V_EMP_REC.EMPLOYEE_ID);
+       DBMS_OUTPUT.PUT_LINE('DPT.ID: '||V_EMP_REC.DEPARTMENT_ID);
+       DBMS_OUTPUT.PUT_LINE('SALARY: '||TO_CHAR(V_EMP_REC.SALARY,'fmL999G990D00'));
+       DBMS_OUTPUT.PUT_LINE('------------------------------------------------------------');
+    END LOOP;       
+END;
+        
